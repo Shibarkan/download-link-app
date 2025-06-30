@@ -22,7 +22,7 @@ function App() {
 
   return (
     <div className="max-w-xl mx-auto p-4">
-      <h1 className="text-2xl font-bold mb-4">🔗 Link Downloader</h1>
+      <h1 className="text-2xl font-bold mb-4"> Link Downloader</h1>
       <PasteInput onSubmit={handleFetch} />
       {loading && <p className="mt-4">Loading...</p>}
       <PreviewCard data={data} />
