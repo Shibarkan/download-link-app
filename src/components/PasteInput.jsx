@@ -16,11 +16,11 @@ export default function PasteInput({ onSubmit }) {
         placeholder="Paste link here..."
         value={url}
         onChange={(e) => setUrl(e.target.value)}
-        className="w-full px-4 py-2 border rounded-lg outline-none focus:ring-2 focus:ring-blue-500"
+        className="w-full px-4 py-2 border rounded-lg"
       />
       <button
         type="submit"
-        className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition"
+        className="bg-blue-600 text-white px-4 py-2 rounded-lg"
       >
         Preview
       </button>
