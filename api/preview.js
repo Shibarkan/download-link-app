@@ -1,5 +1,5 @@
 export default async function handler(req, res) {
-  const { url } = req.query; // ambil dari query URL
+  const { url } = req.query;
 
   if (!url) {
     return res.status(400).json({ error: "URL is required" });
@@ -17,8 +17,8 @@ export default async function handler(req, res) {
     return res.status(200).json({
       title: data.data.title,
       thumbnail: data.data.cover,
-      play: data.data.play, // video URL
-      music: data.data.music, // audio URL
+      play: data.data.play,
+      music: data.data.music,
       author: data.data.author.nickname,
     });
   } catch (error) {
